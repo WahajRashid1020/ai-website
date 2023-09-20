@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import NavBar from "@/components/ui/nav";
+import "./globals.css";
 
 export default function Home() {
   return (
     <>
-      <h1>Next</h1>
+      <NavBar />
     </>
   );
 }
