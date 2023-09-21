@@ -1,9 +1,7 @@
-import React from "react";
-
 const BestApp = () => {
   return (
-    <div className="bg-white my-[2rem]">
-      <div className="container m-auto py-[4rem]">
+    <div className="bg-white mt-[2rem]">
+      <div className="pt-[4rem]">
         <div className="mx-[2rem] sm:mx-0 ">
           <div className="flex flex-col sm:flex-row space-x-2">
             <img className="sm:flex hidden" src="/phone.png" alt="Img" />
@@ -27,12 +25,12 @@ const BestApp = () => {
                 <img src="/mp2.png" alt="Img" />
                 <img src="/mp3.png" alt="Img" />
               </div>
-              <div className="sm:hidden">
-                <img src="/mphone.png" alt="" />
-              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="sm:hidden pt-4">
+        <img src="/mphone.png" alt="" />
       </div>
     </div>
   );

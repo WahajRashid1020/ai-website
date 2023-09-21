@@ -1,5 +1,3 @@
-import React from "react";
-import MiniCard from "../ui/minicard";
 import ReviewCard from "../ui/reviewcard";
 
 const Reviews = () => {

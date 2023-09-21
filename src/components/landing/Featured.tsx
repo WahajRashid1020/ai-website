@@ -1,5 +1,3 @@
-import React from "react";
-
 const Featured = () => {
   return (
     <div className="container m-auto py-4">

@@ -1,4 +1,3 @@
-import React from "react";
 import MiniCard from "../ui/minicard";
 
 const CertifiedPilot = () => {

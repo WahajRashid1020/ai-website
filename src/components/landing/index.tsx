@@ -1,13 +1,12 @@
-import React from "react";
-import HeroSection from "./HeroSection";
-import Featured from "./Featured";
-import StartFlying from "./StartFlying";
-import FlightLesson from "./FlightLesson";
-import StartJourney from "./StartJourney";
-import CertifiedPilot from "./CertifiedPilot";
 import AboutUS from "./AboutUS";
-import Reviews from "./Reviews";
 import BestApp from "./BestApp";
+import CertifiedPilot from "./CertifiedPilot";
+import Featured from "./Featured";
+import FlightLesson from "./FlightLesson";
+import HeroSection from "./HeroSection";
+import Reviews from "./Reviews";
+import StartFlying from "./StartFlying";
+import StartJourney from "./StartJourney";
 
 const LandingPage = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import MiniCard from "../ui/minicard";
 
 const StartFlying = () => {
@@ -39,35 +38,6 @@ const StartFlying = () => {
               para=" Search by your local airport, aircraft, and availability "
             />
           </div>
-          {/* <div className="flex flex-col  md:flex-row items-center justify-between gap-6">
-            <div className="p-6 h-[450px] w-[400px]  bg-white rounded-[20px] flex flex-col justify-center items-center space-y-2">
-              <img src="/Icon 1.svg" alt="Img" />
-              <h1 className="text-[20px] text-center text-primary font-700">
-                FIND PERFECT INSTRUCTOR
-              </h1>
-              <p className="text-[16px] font-500  text-center">
-                Search by your local airport, aircraft, and availability
-              </p>
-            </div>{" "}
-            <div className=" p-6 h-[450px] w-[400px]  bg-white rounded-[20px] flex flex-col justify-center items-center space-y-2">
-              <img src="/Icon 2.png" alt="Img" />
-              <h1 className="text-[20px] text-center text-primary font-700">
-                SIGN UP TO THE APP
-              </h1>
-              <p className="text-[16px] font-500 text-center">
-                Download app to sign up as student pilot or instructor
-              </p>
-            </div>{" "}
-            <div className="  p-6 h-[450px] w-[400px] bg-white rounded-[20px] flex flex-col justify-center items-center space-y-2">
-              <img className="text-left" src="/Icon 3.png" alt="Img" />
-              <h1 className="text-[20px] text-center text-primary font-700">
-                BOOK YOUR LESSON
-              </h1>
-              <p className="text-[16px] font-500 text-center">
-                Search by your local airport, aircraft, and availability
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

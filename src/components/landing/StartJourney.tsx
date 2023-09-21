@@ -1,6 +1,3 @@
-import React from "react";
-import MiniCard from "../ui/minicard";
-
 const StartJourney = () => {
   return (
     <div className="bg-secondary my-[2rem]">
