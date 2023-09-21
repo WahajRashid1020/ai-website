@@ -11,6 +11,12 @@ module.exports = {
       colors: {
         basic: "#FECD05",
         secondary: "#2644D9",
+        primary: "#0B1028",
+      },
+      fontWeight: {
+        900: 900,
+        700: 700,
+        500: 500,
       },
     },
   },

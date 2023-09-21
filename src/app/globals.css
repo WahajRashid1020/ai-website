@@ -35,6 +35,12 @@
 
     --radius: 0.5rem;
   }
+  .air {
+    background-image: url("/aircraft.png");
+  }
+  .mair {
+    background-image: url("/m-aircraft.png");
+  }
 
   .dark {
     --background: 0 0% 3.9%;

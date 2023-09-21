@@ -29,8 +29,8 @@ const NavBar: React.FC = () => {
       <div
         className={
           nav
-            ? "md:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-basic ease-in duration-300"
-            : "md:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-basic ease-in duration-300"
+            ? "md:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-basic ease-in duration-300 z-10"
+            : "md:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen text-white bg-basic ease-in duration-300 z-10"
         }
       >
         {/* Mobile menu content */}
@@ -82,8 +82,8 @@ const NavBar: React.FC = () => {
           <div className="relative flex-grow mx-4">
             <input
               type="text"
-              className="border border-basic border-[1px] rounded-md py-4 px-4 w-full flex items-center outline-secondary"
-              placeholder="Search"
+              className=" border-basic border-[1px] rounded-md py-4 px-4 w-full flex items-center outline-secondary"
+              placeholder="Search Instructors, Aircrafts..."
             />
             <div className="absolute right-[6rem] top-1/2 transform -translate-y-1/2">
               <MapPin className="text-secondary hover:text-gray-700 cursor-pointer" />
