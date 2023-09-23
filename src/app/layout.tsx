@@ -1,6 +1,8 @@
+import NavBar from "@/components/ui/nav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/ui/footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

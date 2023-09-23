@@ -1,3 +1,4 @@
+import Filledbtn from "../ui/filledbtn";
 import ReviewCard from "../ui/reviewcard";
 
 const Reviews = () => {
@@ -9,19 +10,19 @@ const Reviews = () => {
             <h1 className="text-[32px] text-white font-700">
               WHAT PILOTS ARE SAYING ABOUT US
             </h1>
-            <button className="sm:block hidden p-[16px] font-700 rounded-[8px] bg-basic text-black">
-              <span>{"Start Flying >"}</span>
-            </button>
+            <div className="hidden sm:block">
+              <Filledbtn text="Start Flying" />
+            </div>
           </div>
 
-          <p className="text-[16px] py-4 sm:w-[70%] text-justify font-500 text-[#97A1BA]">
+          <p className="text-[16px] py-4 sm:w-[70%] text-justify font-500 text-dim">
             Our users love our app because it’s easy to use and has lots of
             features. Here’s some of the great feedback we receive from our
             students and instructors.
           </p>
-          <button className="sm:hidden w-[100%] mb-4 p-[16px] font-700 rounded-[8px] bg-basic text-black">
-            <span>Start Flying</span>
-          </button>
+          <div className="sm:hidden block">
+            <Filledbtn text="Start Flying" />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
             <ReviewCard
               imageSrc="/comas.png"

@@ -1,6 +1,8 @@
+import Filledbtn from "../ui/filledbtn";
+
 const StartJourney = () => {
   return (
-    <div className="bg-secondary my-[2rem]">
+    <div className="bg-secondary mt-[2rem]">
       <div className="container m-auto py-[4rem]">
         <div className="mx-[2rem] sm:mx-0 ">
           <div className="flex flex-col sm:flex-row items-center gap-4 ">
@@ -14,9 +16,7 @@ const StartJourney = () => {
               <h1 className="text-[32px] font-700">
                 ARE YOU READY TO START YOUR FLIGHT JOURNEY?
               </h1>
-              <button className="p-[12px] text-black bg-basic font-900 rounded-[8px] sm:w-fit w-full">
-                <strong>{"Start Pilot Journey >"}</strong>
-              </button>
+              <Filledbtn text="Start Pilot Journey >" />
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
 "use client";
-import { MapPin, MenuIcon, SearchIcon, X } from "lucide-react";
+import { MenuIcon, SearchIcon, X } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Footer from "./footer";
+import SearchInput from "./searchInput";
 
 const NavBar: React.FC = () => {
   const [nav, setnav] = React.useState<boolean>(false);
@@ -39,31 +40,19 @@ const NavBar: React.FC = () => {
           <div className="flex flex-col w-[100%] text-center justify-center items-center">
             <ul className="text-center w-full mx-[2rem] mt-[8rem] space-y-2">
               <li>
-                <div className="relative flex-grow mx-4">
-                  <input
-                    type="text"
-                    className=" border-basic border-[1px] rounded-md py-6 px-4 w-full flex items-center outline-secondary"
-                    placeholder="Instructors..."
-                  />
-                  <div className="absolute right-[6rem] top-1/2 transform -translate-y-1/2">
-                    <MapPin className="text-secondary hover:text-gray-700 cursor-pointer" />
-                  </div>
-                  <button className="absolute bg-basic px-[16px] py-[8px] right-2 top-1/2 transform -translate-y-1/2 text-black hover:text-yellow-[100] rounded-[6px]">
-                    Search
-                  </button>
-                </div>
+                <SearchInput />
               </li>
               <li
                 onClick={handleNave}
                 className="text-2xl py-2 hover:font-bold hover:underline"
               >
-                <Link href="/about">Instructor</Link>
-              </li>{" "}
+                <Link href="/instructor">Instructor</Link>
+              </li>
               <li
                 onClick={handleNave}
                 className="text-2xl py-2 hover:font-bold hover:underline"
               >
-                <Link href="/about"> Flight School</Link>
+                <Link href="/flightschool"> Flight School</Link>
               </li>{" "}
               <li
                 onClick={handleNave}
@@ -108,23 +97,14 @@ const NavBar: React.FC = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-6 flex-grow">
-          <div className="relative flex-grow mx-4">
-            <input
-              type="text"
-              className=" border-basic border-[1px] py-4 px-4 w-full flex items-center outline-secondary"
-              placeholder="Search Instructors, Aircrafts..."
-            />
-            <div className="absolute right-[6rem] top-1/2 transform -translate-y-1/2">
-              <MapPin className="text-secondary hover:text-gray-700 cursor-pointer" />
-            </div>
-            <button className="absolute bg-basic px-[16px] py-[8px] right-2 top-1/2 transform -translate-y-1/2 text-black hover:text-yellow-[100] rounded-[6px]">
-              Search
-            </button>
-          </div>
-
-          <button>Instructor</button>
-          <button>Flight School</button>
-          <button className="  bg-basic px-4 py-4   text-black hover:text-yellow-[100] rounded-[8px]">
+          <SearchInput />
+          <button className="hover:underline">
+            <Link href="/instructor">Instructor</Link>
+          </button>{" "}
+          <button className="hover:underline">
+            <Link href="/flightschool">Flight School</Link>
+          </button>
+          <button className="hover:bg-transparent  border-basic border-[1px]  bg-basic px-4 py-4   text-black hover:text-yellow-[100] rounded-[8px]">
             Sign Up
           </button>
         </div>

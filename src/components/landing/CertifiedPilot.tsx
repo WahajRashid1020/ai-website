@@ -1,3 +1,4 @@
+import Filledbtn from "../ui/filledbtn";
 import MiniCard from "../ui/minicard";
 
 const CertifiedPilot = () => {
@@ -9,20 +10,20 @@ const CertifiedPilot = () => {
             <h1 className="text-[32px] text-primary font-700">
               BECOME A CERTIFIED PILOT
             </h1>
-            <button className="sm:block hidden p-[16px] font-700 rounded-[8px] bg-basic text-black">
-              <span>Start Flying</span>
-            </button>
+            <div className="hidden sm:block">
+              <Filledbtn text="Start Flying" />
+            </div>
           </div>
 
-          <p className="text-[16px] py-4 sm:w-[70%] text-justify font-500 text-[#97A1BA]">
+          <p className="text-[16px] py-4 sm:w-[70%] text-justify font-500 text-dim">
             Our top rated instructors will have you up in the air in no time.
             Whether you’re looking to learn to fly or just brush up on your
             skills, our experienced professionals are here to help. Start
             learning today with one of our Aircraft Instructors.
           </p>
-          <button className="sm:hidden w-[100%] mb-4 p-[16px] font-700 rounded-[8px] bg-basic text-black">
-            <span>Start Flying</span>
-          </button>
+          <div className="sm:hidden block">
+            <Filledbtn text="Start Flying" />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
             <MiniCard
               imageSrc="/icon1.png"

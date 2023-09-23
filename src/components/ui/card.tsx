@@ -50,10 +50,10 @@ const Card: React.FC<CardProps> = ({
           </div>
           <div className="flex flex-row justify-between items-center">
             <div>
-              <span className="border-[##97A1BA] border-[1px] px-[16px] py-[8px] rounded-[20px]">
+              <span className="border-[##97A1BA] text-dim text-[12px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
                 {buttonText1}
               </span>{" "}
-              <span className="border-[##97A1BA] border-[1px] px-[16px] py-[8px] rounded-[20px]">
+              <span className="border-[##97A1BA] text-dim text-[12px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
                 {buttonText2}
               </span>
             </div>

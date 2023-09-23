@@ -1,3 +1,5 @@
+import Filledbtn from "../ui/filledbtn";
+
 const BestApp = () => {
   return (
     <div className="bg-white mt-[2rem]">
@@ -12,9 +14,7 @@ const BestApp = () => {
               <p className="text-[16px]  text-primary">
                 Find, book, and review flight instructors in your area.
               </p>
-              <button className="p-[12px] text-black bg-basic font-900 rounded-[8px] sm:w-fit w-full">
-                {"Start Flying >"}
-              </button>
+              <Filledbtn text="Start Flying >" />
               <div className="sm:flex hidden flex-row gap-2 max-w-[30%]">
                 <img src="/p1.png" alt="Img" />
                 <img src="/p2.png" alt="Img" />

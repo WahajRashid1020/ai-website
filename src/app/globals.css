@@ -35,11 +35,23 @@
 
     --radius: 0.5rem;
   }
-  .air {
+  .banner1 {
     background-image: url("/aircraft.png");
   }
-  .mair {
+  .mbanner1 {
     background-image: url("/m-aircraft.png");
+  }
+  .banner2 {
+    background-image: url("/banner2.png");
+  }
+  .mbanner2 {
+    background-image: url("/mbanner2.png");
+  }
+  .banner3 {
+    background-image: url("/banner3.png");
+  }
+  .mbanner3 {
+    background-image: url("/mbanner2.png");
   }
 
   .dark {

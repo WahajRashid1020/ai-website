@@ -6,9 +6,7 @@ import Footer from "@/components/ui/footer";
 export default function Home() {
   return (
     <>
-      <NavBar />
       <LandingPage />
-      <Footer />
     </>
   );
 }

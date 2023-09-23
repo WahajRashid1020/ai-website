@@ -1,4 +1,5 @@
 import Card from "../ui/card";
+import Emptybtn from "../ui/emptybtn";
 
 const FlightLesson = () => {
   return (
@@ -69,11 +70,7 @@ const FlightLesson = () => {
             buttonText2="KORL"
           />
         </div>
-        <div className="flex justify-center items-center py-2">
-          <button className="w-full sm:w-fit p-[16px] rounded-[8px] border-primary border-[2px]">
-            <strong>See All</strong>
-          </button>
-        </div>
+        <Emptybtn text="See All" />
       </div>
     </div>
   );
