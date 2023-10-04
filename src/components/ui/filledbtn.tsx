@@ -7,11 +7,11 @@ interface CardProps {
 const Filledbtn: React.FC<CardProps> = ({ text }) => {
   return (
     <button
-      className="p-[12px] text-primary bg-basic font-900 rounded-[8px] sm:w-fit w-full
+      className="text-[12px] md:text-[14px] p-[10px] text-primary bg-basic font-700 rounded-[8px] sm:w-fit w-full
     hover:text-basic hover:bg-primary
     "
     >
-      <strong>{text}</strong>
+      {text}
     </button>
   );
 };

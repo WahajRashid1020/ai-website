@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="bg-white p-4">
+    <nav className="bg-white  container px-6 md:px-[1.5rem] sm-py-0 py-2 sm:m-auto">
       <div
         className={
           nav
@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
       </div>
 
       <div className="container mx-auto flex items-center  justify-between">
-        <div className="z-10 cursor-pointer">
+        <div className="z-10 cursor-pointer md:w-[80px] md:h-[80px] w-[44px] h-[44px]">
           <Link href="/">
             <img src="/logo.png" alt="" />
           </Link>

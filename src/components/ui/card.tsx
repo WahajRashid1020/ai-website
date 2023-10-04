@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { ChevronRight, Star } from "lucide-react";
 import React from "react";
 
 interface CardProps {
@@ -39,12 +39,12 @@ const Card: React.FC<CardProps> = ({
             <div className="flex flex-col">
               <p className="text-gray-700 font-bold">{userName}</p>
               <p className="text-gray-700 font-bold text-sm">{userLastName}</p>
-              <div className="flex flex-row">
-                <Star className="text-basic" />
-                <Star className="text-basic" />
-                <Star className="text-basic" />
-                <Star className="text-basic" />
-                <Star className="text-basic" />
+              <div className="flex flex-row ">
+                <Star size={18} className="text-basic" />
+                <Star size={18} className="text-basic" />
+                <Star size={18} className="text-basic" />
+                <Star size={18} className="text-basic" />
+                <Star size={18} className="text-basic" />
               </div>
             </div>
           </div>
@@ -57,8 +57,8 @@ const Card: React.FC<CardProps> = ({
                 {buttonText2}
               </span>
             </div>
-            <button className="p-[12px] bg-basic font-900 rounded-[8px]">
-              {">"}
+            <button className=" bg-basic P-[10PX] w-[38px] h-[34px] rounded-[8px] flex items-center justify-center">
+              <ChevronRight size={20} strokeWidth={3} />
             </button>
           </div>
         </div>

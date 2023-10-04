@@ -1,4 +1,4 @@
-import { Star, User } from "lucide-react";
+import { ChevronRight, Star, User } from "lucide-react";
 import React from "react";
 
 interface CardProps {
@@ -41,27 +41,30 @@ const LessonCard: React.FC<CardProps> = ({
 
         <div className="flex flex-wrap justify-start items-center gap-2">
           {buttonText1 && (
-            <span className="border-dim text-dim text-[12px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
+            <span className="border-dim text-dim text-[9px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
               {buttonText1}
             </span>
           )}
           {buttonText2 && (
-            <span className="border-dim text-dim text-[12px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
+            <span className="border-dim text-dim text-[9px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
               {buttonText2}
             </span>
           )}
           {buttonText3 && (
-            <span className="border-dim text-dim text-[12px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
+            <span className="border-dim text-dim text-[9px] border-[1px] px-[16px] py-[8px] rounded-[20px]">
               {buttonText3}
             </span>
           )}
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <div className="bg-basic w-[100%] p-[16px] rounded-[8px] text-center m-[2rem] border-[1px] border-basic hover:bg-transparent hover:text-basic cursor-pointer">
-          <strong className="text-[20px] font-700">
-            {"Fly with Michael >"}
-          </strong>
+      <div className="flex flex-row justify-center items-center">
+        <div className=" bg-basic w-[100%] p-[16px] rounded-[8px] text-center m-[2rem] border-[1px] border-basic hover:bg-transparent hover:text-basic cursor-pointer">
+          <span className="flex flex-row justify-center items-center">
+            <strong className="text-[20px] font-700">
+              {"Fly with Michael "}
+            </strong>
+            <ChevronRight size={24} strokeWidth={3} />
+          </span>
         </div>
       </div>
     </div>
